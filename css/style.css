@@ -4,31 +4,44 @@
 }
 
 body {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   font-size: 16px;
 }
 
+.gallery {
+  margin-top: 40px;
+}
+
 input[type='search'] {
-  width: 50%;
+  width: 100%;
   padding: 20px;
   border: none;
   border-radius: 5px;
   height: auto;
   outline: 0;
   background-color: #EFF0F1;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 40px;
-}
+@media (min-width:600px) {
+  body {
+    width: 70%;
+  }
 
-.gallery a {
-  margin: 10px;
-  display: inline-block;
+  input[type='search'] {
+    width: 50%;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery a {
+    margin: 10px;
+    display: inline-block;
+  }
 }
